@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrepeat"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:padding="15dp"
+        android:shadowColor="#AC8359"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:text="Cook Buddy"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#663300"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recipe_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/recipe_page_step_1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignLeft="@+id/recipe_1"
+        android:layout_alignRight="@+id/recipe_1"
+        android:layout_below="@+id/recipe_1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape" >
+    </TextView>
+
+</RelativeLayout>
