@@ -1,10 +1,15 @@
 package edu.berkeley.cs160.ideo.cookbuddy;
 
 import android.app.Activity;
-import android.content.Context;
-import android.graphics.drawable.Drawable;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Path;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 import android.view.Window;
 import android.widget.ExpandableListView;
 import android.widget.ImageButton;
@@ -27,13 +32,20 @@ public class MainActivity extends Activity {
 		menu.expandGroup(0);
 		
 		// Set images for circle buttons at bottom
+		Bitmap helpBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.help);
+		Bitmap helpRounded = getRoundedShape(helpBitmap);
 		ImageButton helpButton = (ImageButton) findViewById(R.id.helpPageButton);
-		helpButton.setBackgroundResource(R.drawable.help);
+		helpButton.setImageBitmap(helpRounded);
+		
+		Bitmap addRecipeBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.help);
+		Bitmap addRecipeRounded = getRoundedShape(addRecipeBitmap);
 		ImageButton addRecipeButton = (ImageButton) findViewById(R.id.addRecipeButton);
-		addRecipeButton.setBackgroundResource(R.drawable.plus);
+		addRecipeButton.setImageBitmap(addRecipeRounded);
+		
+		Bitmap profileBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.help);
+		Bitmap profileRounded = getRoundedShape(profileBitmap);
 		ImageButton profileButton = (ImageButton) findViewById(R.id.profilePageButton);
-		profileButton.setBackgroundResource(R.drawable.user);
-		//profileButton.setImageDrawable(Drawable.createFromPath("@drawable/profile"));
+		profileButton.setImageBitmap(profileRounded);
 	}
 
 	@Override
@@ -41,6 +53,37 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	
+	// source: http://stackoverflow.com/questions/14207392/android-button-click-go-to-another-xml-page
+	public void helpClick(View view) {
+		Intent intent = new Intent(MainActivity.this, Help.class);
+		startActivity(intent);
+	}
+	
+	// source: http://www.androiddevelopersolution.com/2012/09/crop-image-in-circular-shape-in-android.html
+	public Bitmap getRoundedShape(Bitmap scaleBitmapImage) {
+		  int targetWidth = 50;
+		  int targetHeight = 50;
+		  Bitmap targetBitmap = Bitmap.createBitmap(targetWidth, 
+		                            targetHeight,Bitmap.Config.ARGB_8888);
+		  
+		                Canvas canvas = new Canvas(targetBitmap);
+		  Path path = new Path();
+		  path.addCircle(((float) targetWidth - 1) / 2,
+		  ((float) targetHeight - 1) / 2,
+		  (Math.min(((float) targetWidth), 
+		                ((float) targetHeight)) / 2),
+		          Path.Direction.CCW);
+		  
+		                canvas.clipPath(path);
+		  Bitmap sourceBitmap = scaleBitmapImage;
+		  canvas.drawBitmap(sourceBitmap, 
+		                                new Rect(0, 0, sourceBitmap.getWidth(),
+		    sourceBitmap.getHeight()), 
+		                                new Rect(0, 0, targetWidth,
+		    targetHeight), null);
+		  return targetBitmap;
 	}
 
 }
