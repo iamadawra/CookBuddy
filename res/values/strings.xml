@@ -6,5 +6,17 @@
     <string name="hello_world">Hello world!</string>
     <string name="help">Help</string>
     <string name="Cook_Buddy">Cook Buddy</string>
+    <string name="Voice_Commands">Voice Commands</string>
+    <string name="help_text">
+        Welcome to Cook Buddy! Here are the list of voice commands Cook Buddy supports. To activate voice commands, 
+        say "Cook Buddy" and then one of the following commands while on any recipe page.\n
+        - "Previous" - Go to the previous step.\n
+        - "Next" - Go to the next step.\n
+        - "Call Author" - Call the author of the recipe.\n
+        - "Set Timer" - Sets a timer for that step.\n
+        - "Home" - Return to the home screen.\n
+        - "Landing Page" - Go to first screen of current recipe.\n
+        - "Text" - Text the author of the recipe.\n
+    </string>
 
 </resources>

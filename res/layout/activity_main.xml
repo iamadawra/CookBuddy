@@ -50,7 +50,7 @@
         android:id="@+id/addRecipeButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_alignTop="@+id/profilePageButton"
+        android:layout_above="@+id/profilePageButton"
         android:layout_centerHorizontal="true"
         android:background="@drawable/whitecircle" />
 
@@ -59,8 +59,9 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignLeft="@+id/menu"
-        android:layout_below="@+id/menu"
-        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="14dp"
         android:background="@drawable/whitecircle" />
 
 </RelativeLayout>
