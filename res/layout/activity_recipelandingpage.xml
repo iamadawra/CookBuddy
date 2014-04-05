@@ -24,32 +24,48 @@
         android:textColor="#663300"
         android:textSize="20dp"
         android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/recipe_instruction"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_below="@id/recipe_title"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/shape"
-        android:gravity="center_vertical"
-        android:padding="15dp"
-        android:paddingTop="500dp"
-        android:shadowColor="#AC8359"
-        android:shadowDx="3"
-        android:shadowDy="-3"
-        android:shadowRadius="1.5"
-        android:text="Ingredients:"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#663300"
-        android:textSize="15dp" />
-
-    <Button
+    <!-- <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/recipe_instruction"
         android:layout_centerHorizontal="true"
-        android:text="Start Recipe!" />
+        android:text="Start Recipe!" />-->
+
+    <TextView
+        android:id="@+id/recipe_instruction"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/recipe_title"
+        android:layout_below="@+id/recipe_title"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/shape"
+        android:padding="15dp"
+        android:paddingTop="200dp"
+        android:shadowColor="#AC8359"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:text="Ingredients:\n* Chocolate Chips\n* Cookie Dough"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#663300"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recipe_start"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Start Recipe!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#663300"
+        android:textSize="15dp"
+        android:textStyle="bold" />
     
 </RelativeLayout>
