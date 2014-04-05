@@ -32,11 +32,35 @@
         android:shadowDx="3"
         android:shadowDy="-3"
         android:shadowRadius="1.5"
-        android:text="Cook Buddy"
+        android:text="@string/Cook_Buddy"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#663300"
-        android:textSize="50dp"
+        android:textSize="45sp"
         android:textStyle="bold" />
 
+    <ImageButton
+        android:id="@+id/helpPageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/menu"
+        android:layout_alignTop="@+id/profilePageButton"
+        android:background="@drawable/whitecircle" />
+
+    <ImageButton
+        android:id="@+id/addRecipeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/profilePageButton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/whitecircle" />
+
+    <ImageButton
+        android:id="@+id/profilePageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/menu"
+        android:layout_below="@+id/menu"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/whitecircle" />
 
 </RelativeLayout>
