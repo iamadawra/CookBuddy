@@ -16,7 +16,7 @@ public class RecipeLandingPageActivity extends Activity {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		
 		// And after removing the title bar, set content view
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_recipelandingpage);
 		
 	}
 

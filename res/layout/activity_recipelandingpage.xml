@@ -6,14 +6,12 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    android:paddingTop="@dimen/activity_vertical_margin" >
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
-        android:layout_alignParentTop="true"
+        android:id="@+id/recipe_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="@drawable/shape"
         android:padding="15dp"
@@ -21,32 +19,37 @@
         android:shadowDx="3"
         android:shadowDy="-3"
         android:shadowRadius="1.5"
-        android:text="Cook Buddy"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recipe: Chocolate Chip Cookies"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#663300"
-        android:textSize="45dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/recipe_1"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/shape" >
-    </TextView>
-    
-    <TextView
-        android:id="@+id/recipe_page_step_1"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignLeft="@+id/recipe_1"
-        android:layout_alignRight="@+id/recipe_1"
-        android:layout_below="@+id/recipe_1"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/shape" >
-    </TextView>
+        android:id="@+id/recipe_instruction"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/recipe_title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:paddingTop="500dp"
+        android:shadowColor="#AC8359"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:text="Ingredients:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#663300"
+        android:textSize="15dp" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recipe_instruction"
+        android:layout_centerHorizontal="true"
+        android:text="Start Recipe!" />
+    
 </RelativeLayout>
