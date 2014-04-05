@@ -39,24 +39,21 @@
         android:textStyle="bold" />
 
     <ImageButton
-        android:id="@+id/helpPageButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:onClick="helpClick"
-        android:layout_alignRight="@+id/menu"
-        android:layout_alignTop="@+id/profilePageButton"
-        android:background="@drawable/rounded"
-        android:src="@drawable/help" />
-
-    <ImageButton
         android:id="@+id/addRecipeButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_above="@+id/profilePageButton"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded" />
+
+    <ImageButton
+        android:id="@+id/helpPageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/menu"
+        android:layout_alignTop="@+id/profilePageButton"
         android:background="@drawable/rounded"
-        android:src="@drawable/plus"
-        android:padding="100dp" />
+        android:onClick="helpClick" />
 
     <ImageButton
         android:id="@+id/profilePageButton"
@@ -64,9 +61,33 @@
         android:layout_height="50dp"
         android:layout_alignLeft="@+id/menu"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="52dp"
-        android:layout_marginLeft="14dp"
-        android:background="@drawable/rounded"
-        android:src="@drawable/profile" />
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/rounded" />
+
+    <TextView
+        android:id="@+id/textViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profilePageButton"
+        android:layout_below="@+id/helpPageButton"
+        android:text="@string/profile" />
+
+    <TextView
+        android:id="@+id/textViewAddRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/helpPageButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_recipe" />
+
+    <TextView
+        android:id="@+id/textViewHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewUser"
+        android:layout_alignBottom="@+id/textViewUser"
+        android:layout_alignLeft="@+id/helpPageButton"
+        android:layout_marginLeft="10dp"
+        android:text="@string/help" />
 
 </RelativeLayout>

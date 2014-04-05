@@ -6,6 +6,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="help">Help</string>
     <string name="Cook_Buddy">Cook Buddy</string>
+    <string name="profile">Profile</string>
+    <string name="add_recipe">Add Recipe</string>
     <string name="Voice_Commands">Voice Commands</string>
     <string name="help_text">
         Welcome to Cook Buddy! Here are the list of voice commands Cook Buddy supports. To activate voice commands, 
