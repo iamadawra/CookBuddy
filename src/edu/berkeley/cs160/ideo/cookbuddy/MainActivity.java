@@ -32,20 +32,12 @@ public class MainActivity extends Activity {
 		menu.expandGroup(0);
 		
 		// Set images for circle buttons at bottom
-		Bitmap helpBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.help);
-		Bitmap helpRounded = getRoundedShape(helpBitmap);
 		ImageButton helpButton = (ImageButton) findViewById(R.id.helpPageButton);
-		helpButton.setImageBitmap(helpRounded);
-		
-		Bitmap addRecipeBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.help);
-		Bitmap addRecipeRounded = getRoundedShape(addRecipeBitmap);
+		helpButton.setBackgroundResource(R.drawable.help);
 		ImageButton addRecipeButton = (ImageButton) findViewById(R.id.addRecipeButton);
-		addRecipeButton.setImageBitmap(addRecipeRounded);
-		
-		Bitmap profileBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.help);
-		Bitmap profileRounded = getRoundedShape(profileBitmap);
+		addRecipeButton.setBackgroundResource(R.drawable.add);
 		ImageButton profileButton = (ImageButton) findViewById(R.id.profilePageButton);
-		profileButton.setImageBitmap(profileRounded);
+		profileButton.setBackgroundResource(R.drawable.profile);
 	}
 
 	@Override
