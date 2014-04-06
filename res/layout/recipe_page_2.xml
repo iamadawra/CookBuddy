@@ -57,7 +57,7 @@
         android:background="@drawable/shape"
         android:gravity="center_vertical|top"
         android:padding="5dp"
-        android:text="Step 2: Pour mixture into pan. Let it churn for 5 minutes. "
+        android:text="Step 1: Preheat oven to 375 degrees"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#663300"
         android:textSize="15dp" >
@@ -114,7 +114,7 @@
         android:layout_alignLeft="@+id/Button_1"
         android:layout_alignParentBottom="true"
         android:gravity="center_horizontal"
-        android:text="@string/call" />
+        android:text="Contact" />
 
     <TextView
         android:id="@+id/textViewTimer"
@@ -123,7 +123,7 @@
         android:layout_alignBaseline="@+id/textViewCallAuthor"
         android:layout_alignBottom="@+id/textViewCallAuthor"
         android:layout_alignLeft="@+id/Button_4"
-        android:text="@string/timer" />
+        android:text="Timer" />
 
     <TextView
         android:id="@+id/textViewHome"
@@ -132,23 +132,7 @@
         android:layout_alignBaseline="@+id/textViewTimer"
         android:layout_alignBottom="@+id/textViewTimer"
         android:layout_centerHorizontal="true"
-        android:text="@string/home" />
-
-    <TextView
-        android:id="@+id/textViewRecipe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button_5"
-        android:layout_below="@+id/Button_5"
-        android:text="@string/recipe" />
-
-    <TextView
-        android:id="@+id/textViewTextMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button_2"
-        android:layout_below="@+id/Button_2"
-        android:text="@string/text" />
+        android:text="Home" />
 
     <ImageButton
         android:id="@+id/previous_step"
@@ -158,12 +142,30 @@
         android:layout_below="@+id/recipe_page_step_1"
         android:background="@drawable/previous_icon" />
 
+    <TextView
+        android:id="@+id/textViewRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewHome"
+        android:layout_alignBottom="@+id/textViewHome"
+        android:layout_alignLeft="@+id/Button_5"
+        android:text="Recipe" />
+
+    <TextView
+        android:id="@+id/textViewTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewRecipe"
+        android:layout_alignBottom="@+id/textViewRecipe"
+        android:layout_alignLeft="@+id/Button_2"
+        android:text="Text" />
+
     <ImageButton
         android:id="@+id/Button_1"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_above="@+id/textViewCallAuthor"
         android:layout_alignLeft="@+id/previous_step"
-        android:layout_below="@+id/previous_step"
         android:background="@drawable/calling_icon" />
 
 </RelativeLayout>
