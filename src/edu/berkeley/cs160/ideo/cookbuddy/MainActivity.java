@@ -1,14 +1,18 @@
 package edu.berkeley.cs160.ideo.cookbuddy;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Path;
 import android.graphics.Rect;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
@@ -33,8 +37,18 @@ public class MainActivity extends Activity {
 		menu = (ExpandableListView) findViewById(R.id.menu);
 		menuAdapter = new menuAdapter(this);
 		menu.setAdapter(menuAdapter);
+		menu.expandGroup(0);
+		
+		// Set images for circle buttons at bottom
+		ImageButton helpButton = (ImageButton) findViewById(R.id.helpPageButton);
+		helpButton.setBackgroundResource(R.drawable.help);
+		ImageButton addRecipeButton = (ImageButton) findViewById(R.id.addRecipeButton);
+		addRecipeButton.setBackgroundResource(R.drawable.add);
+		ImageButton profileButton = (ImageButton) findViewById(R.id.profilePageButton);
+		profileButton.setBackgroundResource(R.drawable.profile);
+		
 		menu.setOnChildClickListener(new OnChildClickListener() {
-	 
+			 
             public boolean onChildClick(ExpandableListView parent, View v,
                     int groupPosition, int childPosition, long id) {
                 String selected = (String) menuAdapter.getChild(groupPosition, childPosition);
@@ -46,15 +60,17 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
-		menu.expandGroup(0);
 		
-		// Set images for circle buttons at bottom
-		ImageButton helpButton = (ImageButton) findViewById(R.id.helpPageButton);
-		helpButton.setBackgroundResource(R.drawable.help);
-		ImageButton addRecipeButton = (ImageButton) findViewById(R.id.addRecipeButton);
-		addRecipeButton.setBackgroundResource(R.drawable.add);
-		ImageButton profileButton = (ImageButton) findViewById(R.id.profilePageButton);
-		profileButton.setBackgroundResource(R.drawable.profile);
+		helpButton.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View view) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(getBaseContext(), Help.class);
+                startActivity(i); 
+			}
+			
+		});
 	}
 
 	@Override

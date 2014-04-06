@@ -140,7 +140,8 @@
         android:layout_height="40dp"
         android:layout_alignLeft="@+id/recipe_page_step_1"
         android:layout_below="@+id/recipe_page_step_1"
-        android:background="@drawable/previous_icon" />
+        android:background="@drawable/previous_icon"
+        android:onClick="previousStep" />
 
     <TextView
         android:id="@+id/textViewRecipe"
@@ -166,6 +167,7 @@
         android:layout_height="40dp"
         android:layout_above="@+id/textViewCallAuthor"
         android:layout_alignLeft="@+id/previous_step"
-        android:background="@drawable/calling_icon" />
+        android:background="@drawable/calling_icon" 
+        android:onClick="callPhone"/>
 
 </RelativeLayout>

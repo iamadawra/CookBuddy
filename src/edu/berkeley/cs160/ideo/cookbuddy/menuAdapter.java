@@ -11,19 +11,19 @@ public class menuAdapter extends BaseExpandableListAdapter {
 	String[] parentList = {"Under 5 Minutes", "Under 10 Minutes", "Under 30 Minutes", "Under 60 Minutes"};
 	String[][] childList = {
 			{
-				"Recipe 1"
+				"Chocolate Chip Cookies"
 			},
 			{
-				"Recipe 2",
-				"Recipe 3"
+				"Better Chocolate Chip Cookies",
+				"Good Chocolate Chip Cookies"
 			},
 			{
-				"Recipe 4",
-				"Recipe 5"
+				"Great Chocolate Chip Cookies",
+				"Fab Chocolate Chip Cookies"
 			},
 			{
-				"Recipe 6",
-				"Recipe 7"
+				"Best Chocolate Chip Cookies",
+				"WOW Chocolate Chip Cookies"
 			}
 	};
 	

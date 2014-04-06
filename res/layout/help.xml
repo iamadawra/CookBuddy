@@ -10,6 +10,38 @@
     tools:context=".Help" >
 
     <TextView
+        android:id="@+id/textViewHelpText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/textViewHelpTitle"
+        android:layout_below="@+id/textViewHelpTitle"
+        android:background="@drawable/shape"
+        android:padding="15dp"
+        android:text="@string/help_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#663300"
+        android:textSize="14.5sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewHelpText"
+        android:layout_alignRight="@+id/home"
+        android:layout_marginBottom="10dp"
+        android:text="Home" />
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textViewHome"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/home_icon"
+        android:onClick="goHome" />
+
+    <TextView
         android:id="@+id/textViewHelpTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -18,33 +50,10 @@
         android:background="@drawable/shape"
         android:gravity="center_horizontal"
         android:padding="15dp"
-        android:shadowColor="#AC8359"
-        android:shadowDx="3"
-        android:shadowDy="-3"
-        android:shadowRadius="1.5"
         android:text="@string/Voice_Commands"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#663300"
         android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textViewHelpText"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignLeft="@+id/textViewHelpTitle"
-        android:layout_below="@+id/textViewHelpTitle"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/shape"
-        android:padding="15dp"
-        android:shadowColor="#AC8359"
-        android:shadowDx="3"
-        android:shadowDy="-3"
-        android:shadowRadius="1.5"
-        android:text="@string/help_text"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#663300"
-        android:textSize="14.5sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

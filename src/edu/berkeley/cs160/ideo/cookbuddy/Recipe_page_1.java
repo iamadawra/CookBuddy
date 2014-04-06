@@ -1,7 +1,12 @@
 package edu.berkeley.cs160.ideo.cookbuddy;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -42,6 +47,22 @@ public class Recipe_page_1  extends Activity {
 		
 	}
 	
+	public void previousStep(View view){
+		finish();
+	}
+	
+	public void callPhone(View view){
+	    try {
+	        Intent callIntent = new Intent(Intent.ACTION_CALL);
+	        //Phone number should be of the author
+	        //which will be known since when the user submits the recipes,
+	        //the author's phone number will be stored on the online database
+	        callIntent.setData(Uri.parse("tel:5105172555"));
+	        startActivity(callIntent);
+	    } catch (ActivityNotFoundException e) {
+	        Log.e("Aww snap!", "Call failed", e);
+	    }
+	}
 	
 	
 	
