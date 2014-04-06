@@ -49,7 +49,7 @@
     <TextView
         android:id="@+id/recipe_page_step_1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="180dp"
         android:layout_alignLeft="@+id/recipe_1"
         android:layout_alignRight="@+id/recipe_1"
         android:layout_below="@+id/recipe_1"
@@ -71,25 +71,6 @@
         android:layout_alignTop="@+id/previous_step"
         android:layout_below="@+id/recipe_page_step_1"
         android:background="@drawable/next_icon" />
-
-    <ImageButton
-        android:id="@+id/previous_step"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignLeft="@+id/recipe_page_step_1"
-        android:layout_below="@+id/recipe_page_step_1"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/previous_icon" />
-
-    <ImageButton
-        android:id="@+id/Button_1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignLeft="@+id/previous_step"
-        android:layout_below="@+id/previous_step"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/calling_icon" />
 
     <ImageButton
         android:id="@+id/Button_2"
@@ -125,5 +106,64 @@
         android:layout_marginRight="20dp"
         android:layout_toLeftOf="@+id/Button_2"
         android:background="@drawable/new_recipe_icon_2" />
+    
+    <TextView
+        android:id="@+id/textViewCallAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button_1"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="@string/call" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCallAuthor"
+        android:layout_alignBottom="@+id/textViewCallAuthor"
+        android:layout_alignLeft="@+id/Button_4"
+        android:text="@string/timer" />
+
+    <TextView
+        android:id="@+id/textViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewTimer"
+        android:layout_alignBottom="@+id/textViewTimer"
+        android:layout_centerHorizontal="true"
+        android:text="@string/home" />
+
+    <TextView
+        android:id="@+id/textViewRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button_5"
+        android:layout_below="@+id/Button_5"
+        android:text="@string/recipe" />
+
+    <TextView
+        android:id="@+id/textViewTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button_2"
+        android:layout_below="@+id/Button_2"
+        android:text="@string/text" />
+
+    <ImageButton
+        android:id="@+id/previous_step"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/recipe_page_step_1"
+        android:layout_below="@+id/recipe_page_step_1"
+        android:background="@drawable/previous_icon" />
+
+    <ImageButton
+        android:id="@+id/Button_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/previous_step"
+        android:layout_below="@+id/previous_step"
+        android:background="@drawable/calling_icon" />
 
 </RelativeLayout>
