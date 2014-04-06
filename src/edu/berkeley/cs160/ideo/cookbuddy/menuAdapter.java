@@ -35,7 +35,7 @@ public class menuAdapter extends BaseExpandableListAdapter {
 	@Override
 	public Object getChild(int groupPosition, int childPosition) {
 		// TODO Auto-generated method stub
-		return null;
+		return childList[groupPosition][childPosition];
 	}
 
 	@Override

@@ -3,7 +3,6 @@ package edu.berkeley.cs160.ideo.cookbuddy;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Path;
 import android.graphics.Rect;
@@ -11,12 +10,16 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.Window;
+import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
 	ExpandableListView menu;
+	ExpandableListAdapter menuAdapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,20 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		menu = (ExpandableListView) findViewById(R.id.menu);
-		menu.setAdapter(new menuAdapter(this));
+		menuAdapter = new menuAdapter(this);
+		menu.setAdapter(menuAdapter);
+		menu.setOnChildClickListener(new OnChildClickListener() {
+	 
+            public boolean onChildClick(ExpandableListView parent, View v,
+                    int groupPosition, int childPosition, long id) {
+                String selected = (String) menuAdapter.getChild(groupPosition, childPosition);
+                //Make toast for now
+                Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG).show();
+                //Need to pass in object id to the new activity so it can pull from the database in the long run
+                
+                return true;
+            }
+        });
 		menu.expandGroup(0);
 		
 		// Set images for circle buttons at bottom
