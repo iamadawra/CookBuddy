@@ -22,6 +22,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="edu.berkeley.cs160.ideo.cookbuddy.Recipe_page_1"
+        />
+        <activity
+            android:name="edu.berkeley.cs160.ideo.cookbuddy.RecipeLandingPageActivity"
+        />
+        <activity
+            android:name="edu.berkeley.cs160.ideo.cookbuddy.Help"
+        />
     </application>
 
 </manifest>

@@ -41,7 +41,8 @@ public class MainActivity extends Activity {
                 //Make toast for now
                 Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG).show();
                 //Need to pass in object id to the new activity so it can pull from the database in the long run
-                
+                Intent i = new Intent(getBaseContext(), Recipe_page_1.class);
+                startActivity(i); 
                 return true;
             }
         });
