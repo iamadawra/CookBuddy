@@ -57,7 +57,7 @@
         android:background="@drawable/shape"
         android:gravity="center_vertical|top"
         android:padding="5dp"
-        android:text="Step 1: Preheat oven to 375 degrees"
+        android:text="Step 2: Mix Cookie dough with Chocolate chips and bake for 30 minutes."
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#663300"
         android:textSize="15dp" >
@@ -70,7 +70,8 @@
         android:layout_alignRight="@+id/recipe_page_step_1"
         android:layout_alignTop="@+id/previous_step"
         android:layout_below="@+id/recipe_page_step_1"
-        android:background="@drawable/next_icon" />
+        android:background="@drawable/next_icon" 
+        android:onClick="nextStep"/>
 
     <ImageButton
         android:id="@+id/Button_2"
@@ -87,7 +88,8 @@
         android:layout_height="40dp"
         android:layout_alignTop="@+id/Button_1"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/home_icon" />
+        android:background="@drawable/home_icon"
+        android:onClick="home" />
 
     <ImageButton
         android:id="@+id/Button_4"

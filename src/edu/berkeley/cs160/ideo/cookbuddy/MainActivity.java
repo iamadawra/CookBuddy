@@ -31,6 +31,9 @@ public class MainActivity extends Activity {
 		//The following line removes the title bar and hence, better UI
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		
+		//Setting custom animation
+		//overridePendingTransition(R.anim.anim_in, R.anim.anim_out);
+		
 		// And after removing the title bar, set content view
 		setContentView(R.layout.activity_main);
 		
@@ -55,7 +58,7 @@ public class MainActivity extends Activity {
                 //Make toast for now
                 Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG).show();
                 //Need to pass in object id to the new activity so it can pull from the database in the long run
-                Intent i = new Intent(getBaseContext(), Recipe_page_1.class);
+                Intent i = new Intent(getBaseContext(), RecipeLandingPageActivity.class);
                 startActivity(i); 
                 return true;
             }
