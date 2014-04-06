@@ -56,7 +56,8 @@ public class MainActivity extends Activity {
                     int groupPosition, int childPosition, long id) {
                 String selected = (String) menuAdapter.getChild(groupPosition, childPosition);
                 //Make toast for now
-                Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG).show();
+                // Removing toast, use later maybe to debug
+                //Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG).show();
                 //Need to pass in object id to the new activity so it can pull from the database in the long run
                 Intent i = new Intent(getBaseContext(), RecipeLandingPageActivity.class);
                 startActivity(i); 
