@@ -51,7 +51,7 @@ public class menuAdapter extends BaseExpandableListAdapter {
 		
 		TextView tv = new TextView(context);
 		tv.setText(childList[groupPosition][childPosition]);
-		tv.setPadding(70, 10, 10, 10);
+		tv.setPadding(80, 10, 10, 10);
 		tv.setTextSize(22);
 		return tv;
 	}
@@ -87,7 +87,7 @@ public class menuAdapter extends BaseExpandableListAdapter {
 		
 		TextView tv = new TextView(context);
 		tv.setText(parentList[groupPosition]);
-		tv.setPadding(50, 10, 10, 10);
+		tv.setPadding(70, 10, 10, 10);
 		tv.setTextSize(28);
 		return tv;
 	}

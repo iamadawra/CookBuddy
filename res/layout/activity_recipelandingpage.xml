@@ -65,5 +65,14 @@
         android:textStyle="bold" 
         android:clickable="true"
         android:onClick="startRecipe"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/recipe_instruction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/cookies" />
     
 </RelativeLayout>
