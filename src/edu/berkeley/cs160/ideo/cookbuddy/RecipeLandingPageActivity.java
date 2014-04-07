@@ -16,6 +16,9 @@ public class RecipeLandingPageActivity extends Activity {
 		//The following line removes the title bar and hence, better UI
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		
+		//Setting custom animation
+		overridePendingTransition(R.anim.anim_in, R.anim.anim_out);
+		
 		// And after removing the title bar, set content view
 		setContentView(R.layout.activity_recipelandingpage);
 		
