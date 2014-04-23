@@ -37,7 +37,7 @@ protected void onCreate(Bundle savedInstanceState) {
 		ImageButton Button_1 = (ImageButton) findViewById(R.id.Button_1);
 		Button_1.setBackgroundResource(R.drawable.calling_icon);//user
 		ImageButton Button_2 = (ImageButton) findViewById(R.id.Button_2);
-		Button_2.setBackgroundResource(R.drawable.message_icon);
+		Button_2.setBackgroundResource(R.drawable.cook);
 		ImageButton Button_3 = (ImageButton) findViewById(R.id.Button_3);
 		Button_3.setBackgroundResource(R.drawable.home_icon);
 		ImageButton Button_4 = (ImageButton) findViewById(R.id.Button_4);

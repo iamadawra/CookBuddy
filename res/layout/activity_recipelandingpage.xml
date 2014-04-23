@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin" >
-
+    
     <TextView
         android:id="@+id/recipe_title"
         android:layout_width="wrap_content"
@@ -37,6 +37,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/recipe_title"
+        android:layout_alignRight="@+id/recipe_title"
         android:layout_below="@+id/recipe_title"
         android:layout_marginTop="18dp"
         android:background="@drawable/shape"
@@ -48,31 +49,74 @@
         android:textSize="15dp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/recipe_start"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="42dp"
-        android:background="@drawable/shape"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="Start Recipe!"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="#663300"
-        android:textSize="15dp"
-        android:textStyle="bold" 
-        android:clickable="true"
-        android:onClick="startRecipe"/>
-
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/recipe_instruction"
+        android:layout_alignRight="@+id/recipe_instruction"
         android:layout_below="@+id/recipe_instruction"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
+        android:background="@drawable/shape"
+        android:padding="15dp"
+        android:shadowColor="#AC8359"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
         android:src="@drawable/cookies" />
+
+    <ImageButton
+        android:id="@+id/imagebutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:onClick="startRecipe"
+        android:background="@drawable/cook" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Start Cooking!" />
+
+    <ImageButton
+        android:id="@+id/Button_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/imageView1"
+        android:background="@drawable/calling_icon" />
+
+    <ImageButton
+        android:id="@+id/Button_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:background="@drawable/help" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/Button_1"
+        android:layout_marginLeft="5dp"
+        android:text="Help" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/Button_2"
+        android:text="Clarify" />
     
 </RelativeLayout>

@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +23,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="edu.berkeley.cs160.ideo.cookbuddy.Recipe_page_1"
+        />
+        <activity
+            android:name="edu.berkeley.cs160.ideo.cookbuddy.Recipe_page_2"
+        />
+        <activity
+            android:name="edu.berkeley.cs160.ideo.cookbuddy.Recipe_page_3"
+        />
+        <activity
+            android:name="edu.berkeley.cs160.ideo.cookbuddy.RecipeLandingPageActivity"
+        />
+        <activity
+            android:name="edu.berkeley.cs160.ideo.cookbuddy.Help"
+        />
     </application>
 
 </manifest>

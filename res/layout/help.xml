@@ -8,19 +8,25 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Help" >
-
-    <TextView
-        android:id="@+id/textViewHelpText"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignLeft="@+id/textViewHelpTitle"
-        android:layout_below="@+id/textViewHelpTitle"
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="50dp"
+        android:paddingTop="12dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shape"
-        android:padding="15dp"
-        android:text="@string/help_text"
+        android:gravity="top|center_vertical|center_horizontal|fill_horizontal"
+        android:shadowColor="#AC8359"
+        android:shadowDx="3"
+        android:shadowDy="-3"
+        android:shadowRadius="1.5"
+        android:text="Cook Buddy"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#663300"
-        android:textSize="14.5sp"
+        android:textSize="42sp"
         android:textStyle="bold" />
 
     <TextView
@@ -45,8 +51,8 @@
         android:id="@+id/textViewHelpTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
         android:background="@drawable/shape"
         android:gravity="center_horizontal"
         android:padding="15dp"
@@ -54,6 +60,21 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#663300"
         android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewHelpText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/textViewHelpTitle"
+        android:layout_below="@+id/textViewHelpTitle"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape"
+        android:padding="15dp"
+        android:text="@string/help_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#663300"
+        android:textSize="14.5sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

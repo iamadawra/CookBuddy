@@ -17,7 +17,6 @@ public class Help extends Activity {
 		
 		// And after removing the title bar, set content view
 		setContentView(R.layout.help);
-		home = (ImageButton) findViewById(R.id.home);
 		
 	}
 
