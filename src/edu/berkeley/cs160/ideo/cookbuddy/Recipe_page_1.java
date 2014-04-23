@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Recipe_page_1  extends Activity {
 	
@@ -48,6 +49,11 @@ public class Recipe_page_1  extends Activity {
 		ImageButton Button_5 = (ImageButton) findViewById(R.id.Button_5);
 		Button_5.setBackgroundResource(R.drawable.new_recipe_icon_2);
 		
+		//Repeat Twice to last longer
+		Toast.makeText(getApplicationContext(), "Use the 'Clarify' button to directly call the Recipe Author if you are stuck!",
+				   Toast.LENGTH_LONG).show();
+		Toast.makeText(getApplicationContext(), "Use the 'Clarify' button to directly call the Recipe Author if you are stuck!",
+				   Toast.LENGTH_LONG).show();
 	}
 	
 	public void previousStep(View view){

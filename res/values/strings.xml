@@ -10,12 +10,12 @@
     <string name="add_recipe">Add Recipe</string>
     <string name="Voice_Commands">Voice Commands</string>
     <string name="help_text">
-        <font size="18">\'Previous\'</font> - Go to the previous step.\n\n
-        <font size="18">\'Next\'</font> - Go to the next step.\n\n
-        <font size="18">\'Clarify\'</font> - Call the author of the recipe to clarify something about the recipe.\n\n
-        <font size="18">\'Set Timer\'</font> - Sets a timer for that step.\n\n
-        <font size="18">\'Go Home\'</font> - Return to the home screen.\n\n
-        <font size="18">\'Recipe Page\'</font> - Go to first screen of current recipe.\n
+        <font size="16">\'Cook Buddy, PREVIOUS STEP\'</font> - Go to the previous step.\n\n
+        <font size="16">\'Cook Buddy, NEXT STEP\'</font> - Go to the next step.\n\n
+        <font size="16">\'Cook Buddy, CLARIFY\'</font> - Call the Recipe Author to clarify something about the recipe.\n\n
+        <font size="16">\'Cook Buddy, SET TIMER\'</font> - Sets a timer for that step.\n\n
+        <font size="16">\'Cook Buddy, GO HOME\'</font> - Return to the home screen.\n\n
+        <font size="16">\'Cook Buddy, RECIPE PAGE\'</font> - Go to first screen of current recipe.\n
     </string>
 
 </resources>

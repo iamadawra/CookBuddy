@@ -183,7 +183,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageButton1"
         android:layout_toRightOf="@+id/imageButton1"
-        android:text="Now Listening"
+        android:text="Now Listening.."
         android:textSize="20dp" />
 
     <ImageButton

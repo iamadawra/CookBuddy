@@ -15,9 +15,11 @@
         android:layout_height="80dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:paddingLeft="50dp"
+        android:paddingTop="12dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shape"
-        android:gravity="center_vertical|center_horizontal"
-        android:padding="15dp"
+        android:gravity="top|center_vertical|center_horizontal|fill_horizontal"
         android:shadowColor="#AC8359"
         android:shadowDx="3"
         android:shadowDy="-3"
@@ -25,7 +27,7 @@
         android:text="Cook Buddy"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#663300"
-        android:textSize="45dp"
+        android:textSize="42sp"
         android:textStyle="bold" />
 
     <TextView
@@ -37,12 +39,13 @@
         android:layout_below="@+id/textView1"
         android:layout_marginTop="5dp"
         android:background="@drawable/shape"
-        android:gravity="center_vertical|center_horizontal"
-        android:padding="5dp"
+        android:gravity="top|center_vertical|center_horizontal|fill_horizontal"
+        android:paddingLeft="25dp"
+        android:paddingTop="8dp"
         android:text="Recipe: Chocolate Chip Cookies"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#663300"
-        android:textSize="18dp"
+        android:textSize="20dp"
         android:textStyle="bold" >
     </TextView>
 
@@ -57,10 +60,10 @@
         android:background="@drawable/shape"
         android:gravity="center_vertical|top"
         android:padding="5dp"
-        android:text="Step 2: Mix Cookie dough with Chocolate chips and bake for 30 minutes."
+        android:text="Step 2: \n\nMix Cookie dough with Chocolate chips and bake for 30 minutes."
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#663300"
-        android:textSize="15dp" >
+        android:textSize="20dp" >
     </TextView>
 
     <ImageButton
@@ -70,8 +73,8 @@
         android:layout_alignRight="@+id/recipe_page_step_1"
         android:layout_alignTop="@+id/previous_step"
         android:layout_below="@+id/recipe_page_step_1"
-        android:background="@drawable/next_icon" 
-        android:onClick="nextStep"/>
+        android:background="@drawable/next_icon"
+        android:onClick="nextStep" />
 
     <ImageButton
         android:id="@+id/Button_2"
@@ -90,24 +93,6 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/home_icon"
         android:onClick="home" />
-
-    <ImageButton
-        android:id="@+id/Button_4"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignTop="@+id/Button_1"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@+id/Button_1"
-        android:background="@drawable/alarm" />
-
-    <ImageButton
-        android:id="@+id/Button_5"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/Button_2"
-        android:layout_marginRight="20dp"
-        android:layout_toLeftOf="@+id/Button_2"
-        android:background="@drawable/new_recipe_icon_2" />
     
     <TextView
         android:id="@+id/textViewCallAuthor"
@@ -116,7 +101,7 @@
         android:layout_alignLeft="@+id/Button_1"
         android:layout_alignParentBottom="true"
         android:gravity="center_horizontal"
-        android:text="Contact" />
+        android:text="Clarify" />
 
     <TextView
         android:id="@+id/textViewTimer"
@@ -136,15 +121,6 @@
         android:layout_centerHorizontal="true"
         android:text="Home" />
 
-    <ImageButton
-        android:id="@+id/previous_step"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignLeft="@+id/recipe_page_step_1"
-        android:layout_below="@+id/recipe_page_step_1"
-        android:background="@drawable/previous_icon"
-        android:onClick="previousStep" />
-
     <TextView
         android:id="@+id/textViewRecipe"
         android:layout_width="wrap_content"
@@ -161,7 +137,8 @@
         android:layout_alignBaseline="@+id/textViewRecipe"
         android:layout_alignBottom="@+id/textViewRecipe"
         android:layout_alignLeft="@+id/Button_2"
-        android:text="Text" />
+        android:paddingLeft="5dp"
+        android:text="Help" />
 
     <ImageButton
         android:id="@+id/Button_1"
@@ -169,6 +146,53 @@
         android:layout_height="40dp"
         android:layout_above="@+id/textViewCallAuthor"
         android:layout_alignLeft="@+id/previous_step"
-        android:background="@drawable/calling_icon" />
+        android:background="@drawable/calling_icon" 
+        android:onClick="callPhone"/>
+
+    <ImageButton
+        android:id="@+id/previous_step"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/recipe_page_step_1"
+        android:layout_below="@+id/recipe_page_step_1"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/previous_icon"
+        android:onClick="previousStep" />
+
+    <ImageButton
+        android:id="@+id/Button_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textViewTimer"
+        android:layout_marginRight="33dp"
+        android:layout_toLeftOf="@+id/Button_3"
+        android:background="@drawable/alarm" />
+
+    <ImageButton
+        android:id="@+id/Button_5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textViewRecipe"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@+id/Button_3"
+        android:background="@drawable/new_recipe_icon_2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton1"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:text="Now Listening.."
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/recipe_page_step_1"
+        android:layout_alignRight="@+id/textViewTimer"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/listening" />
 
 </RelativeLayout>
