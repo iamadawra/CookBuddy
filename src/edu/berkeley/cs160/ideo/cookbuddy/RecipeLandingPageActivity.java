@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.Window;
-import android.widget.ImageButton;
 
 public class RecipeLandingPageActivity extends Activity {
 	
@@ -22,8 +21,6 @@ public class RecipeLandingPageActivity extends Activity {
 		
 		// And after removing the title bar, set content view
 		setContentView(R.layout.activity_recipelandingpage);
-		
-		ImageButton cookButton = (ImageButton) findViewById(R.id.cook);
 		
 	}
 
