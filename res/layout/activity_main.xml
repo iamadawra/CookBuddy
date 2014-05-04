@@ -44,8 +44,7 @@
         android:layout_height="50dp"
         android:layout_above="@+id/profilePageButton"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/rounded" 
-        android:onClick="addRecipe"
+        android:background="@drawable/rounded"
         tools:ignore="ContentDescription" />
 
     <ImageButton
