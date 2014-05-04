@@ -90,6 +90,12 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 	
+	public void addRecipe(View view){
+		Intent intent = new Intent(MainActivity.this, AddRecipePage.class);
+		startActivity(intent);
+		
+	}
+	
 	// source: http://www.androiddevelopersolution.com/2012/09/crop-image-in-circular-shape-in-android.html
 	public Bitmap getRoundedShape(Bitmap scaleBitmapImage) {
 		  int targetWidth = 50;
