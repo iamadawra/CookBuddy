@@ -120,5 +120,7 @@ public class MainActivity extends Activity {
 		    targetHeight), null);
 		  return targetBitmap;
 	}
+	
+	
 
 }
