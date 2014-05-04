@@ -83,6 +83,7 @@
         android:layout_alignRight="@+id/recipe_page_step_1"
         android:layout_alignTop="@+id/Button_1"
         android:layout_below="@+id/next_step"
+        android:onClick="openHelpPage"
         android:background="@drawable/help" />
 
     <ImageButton

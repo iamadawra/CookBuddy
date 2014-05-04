@@ -94,15 +94,6 @@
         android:text="Clarify" />
 
     <TextView
-        android:id="@+id/textViewTimer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textViewCallAuthor"
-        android:layout_alignBottom="@+id/textViewCallAuthor"
-        android:layout_alignLeft="@+id/Button_4"
-        android:text="Timer" />
-
-    <TextView
         android:id="@+id/textViewHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -184,5 +175,14 @@
         android:layout_alignRight="@+id/textViewTimer"
         android:layout_marginBottom="11dp"
         android:background="@drawable/listening" />
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewCallAuthor"
+        android:layout_alignBottom="@+id/textViewCallAuthor"
+        android:layout_alignLeft="@+id/Button_4"
+        android:text="Timer" />
 
 </RelativeLayout>

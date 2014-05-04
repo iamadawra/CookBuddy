@@ -35,5 +35,10 @@ public class RecipeLandingPageActivity extends Activity {
 		Intent i = new Intent(getBaseContext(), Recipe_page_1.class);
         startActivity(i); 
 	}
+	
+	public void openHelpPage(View view) {
+		Intent i = new Intent(getBaseContext(), Help.class);
+        startActivity(i);
+	}
 
 }

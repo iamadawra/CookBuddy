@@ -82,6 +82,11 @@ public class Recipe_page_1  extends Activity {
 		startActivity(new Intent(this, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
 	}
 	
+	public void openHelpPage(View view){
+		Intent i = new Intent(getBaseContext(), Help.class);
+		startActivity(i);
+	}
+	
 	
 	
 }

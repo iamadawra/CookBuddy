@@ -89,6 +89,7 @@
         android:layout_height="40dp"
         android:layout_above="@+id/textView1"
         android:layout_alignRight="@+id/imageView1"
+        android:onClick="openHelpPage"
         android:background="@drawable/help" />
 
     <TextView
