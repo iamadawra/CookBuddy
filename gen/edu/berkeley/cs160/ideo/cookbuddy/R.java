@@ -47,14 +47,14 @@ public final class R {
         public static final int whitecircle=0x7f020013;
     }
     public static final class id {
-        public static final int Button_1=0x7f09000d;
-        public static final int Button_2=0x7f09000c;
+        public static final int Button_1=0x7f09000c;
+        public static final int Button_2=0x7f09000b;
         public static final int Button_3=0x7f090017;
         public static final int Button_4=0x7f09001a;
         public static final int Button_5=0x7f09001c;
         public static final int action_settings=0x7f09001f;
         public static final int addRecipeButton=0x7f090002;
-        public static final int cook=0x7f09000b;
+        public static final int cook=0x7f09000e;
         public static final int helpPageButton=0x7f090004;
         public static final int home=0x7f090011;
         public static final int imageButton1=0x7f09001e;
@@ -68,7 +68,7 @@ public final class R {
         public static final int recipe_page_step_1=0x7f090014;
         public static final int recipe_title=0x7f090008;
         public static final int textView1=0x7f090001;
-        public static final int textView2=0x7f09000e;
+        public static final int textView2=0x7f09000d;
         public static final int textViewAddRecipe=0x7f090006;
         public static final int textViewCallAuthor=0x7f090018;
         public static final int textViewHelp=0x7f090007;
