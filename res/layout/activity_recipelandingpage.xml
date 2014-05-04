@@ -65,16 +65,6 @@
         android:shadowRadius="1.5"
         android:src="@drawable/cookies" />
 
-    <ImageButton
-        android:id="@+id/imagebutton"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
-        android:onClick="startRecipe"
-        android:background="@drawable/cook" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -82,7 +72,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
-        android:text="Start Cooking!" />
+        android:text="Start Cooking!"
+         />
 
     <ImageButton
         android:id="@+id/Button_2"
@@ -118,5 +109,14 @@
         android:layout_alignBottom="@+id/textView1"
         android:layout_alignLeft="@+id/Button_2"
         android:text="Clarify" />
+
+    <ImageButton
+        android:id="@+id/cook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/Button_1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cook"
+        android:onClick="startRecipe" />
     
 </RelativeLayout>

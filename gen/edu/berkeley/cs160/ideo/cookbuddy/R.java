@@ -27,7 +27,7 @@ public final class R {
     public static final class drawable {
         public static final int add=0x7f020000;
         public static final int alarm=0x7f020001;
-        public static final int back=0x7f020002;
+        public static final int background=0x7f020002;
         public static final int backrepeat=0x7f020003;
         public static final int calling_icon=0x7f020004;
         public static final int circle=0x7f020005;
@@ -54,11 +54,11 @@ public final class R {
         public static final int Button_5=0x7f09001c;
         public static final int action_settings=0x7f09001f;
         public static final int addRecipeButton=0x7f090002;
+        public static final int cook=0x7f09000b;
         public static final int helpPageButton=0x7f090004;
         public static final int home=0x7f090011;
         public static final int imageButton1=0x7f09001e;
         public static final int imageView1=0x7f09000a;
-        public static final int imagebutton=0x7f09000b;
         public static final int menu=0x7f090000;
         public static final int next_step=0x7f090015;
         public static final int previous_step=0x7f090016;
